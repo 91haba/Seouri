@@ -1,0 +1,74 @@
+PODS:
+  - Alamofire (4.5.1)
+  - AlamofireObjectMapper (4.1.0):
+    - Alamofire (~> 4.1)
+    - ObjectMapper (~> 2.0)
+  - Floaty (3.0.1)
+  - GoogleMaps (2.4.0):
+    - GoogleMaps/Maps (= 2.4.0)
+  - GoogleMaps/Base (2.4.0)
+  - GoogleMaps/Maps (2.4.0):
+    - GoogleMaps/Base
+  - GooglePlacePicker (2.4.0):
+    - GoogleMaps (= 2.4.0)
+    - GooglePlaces (= 2.4.0)
+  - GooglePlaces (2.4.0):
+    - GoogleMaps/Base (= 2.4.0)
+  - ImageSlideshow (1.3.2):
+    - ImageSlideshow/Core (= 1.3.2)
+  - ImageSlideshow/Core (1.3.2)
+  - Kingfisher (4.1.0)
+  - KMPlaceholderTextView (1.3.0)
+  - ObjectMapper (2.2.9)
+  - SJSegmentedScrollView (1.3.6)
+  - SlideMenuControllerSwift (3.0.2)
+  - SnapKit (3.2.0)
+  - SwiftyJSON (3.1.4)
+  - TextFieldCounter (1.0.0)
+  - TextFieldEffects (1.3.3)
+  - Then (2.2.0)
+  - Toast-Swift (2.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - AlamofireObjectMapper
+  - Floaty (~> 3.0.0)
+  - GoogleMaps
+  - GooglePlacePicker
+  - GooglePlaces
+  - ImageSlideshow (~> 1.3.0)
+  - Kingfisher
+  - KMPlaceholderTextView (~> 1.3.0)
+  - ObjectMapper (~> 2.2)
+  - SJSegmentedScrollView
+  - SlideMenuControllerSwift
+  - SnapKit (~> 3.2.0)
+  - SwiftyJSON
+  - TextFieldCounter
+  - TextFieldEffects
+  - Then
+  - Toast-Swift
+
+SPEC CHECKSUMS:
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  AlamofireObjectMapper: 435adc82f5b367679bd9e71c4974a54efd0b2521
+  Floaty: bb7a353deee9ddcc14c584ca9c538efdc19669f2
+  GoogleMaps: 8436ab5d1c25e36915b2f7416d0c8e3fa2e76c61
+  GooglePlacePicker: 755f10343d71280c7b016823e73fbae9625dfa8a
+  GooglePlaces: aafe5990fa7951e98e078761bbdaaf236d7e0c65
+  ImageSlideshow: a68a76fc618ebd2b7481ce355ad67d7097203976
+  Kingfisher: f14df8cbe576bf55f211fa589e9869bceb4ea87d
+  KMPlaceholderTextView: 2bbcd19a273648a80a61e1e48f9743a24d8930e3
+  ObjectMapper: 63cfe41bc6f8e7c8f44344c49901b8ae7de14c52
+  SJSegmentedScrollView: 13eb38fc0a28cc46a3ccc52b4e246df0e2227077
+  SlideMenuControllerSwift: 16001e1fd9963fd089fa6c91dbe18d4c148f0ce9
+  SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+  TextFieldCounter: 8809f9e1dffe9ad72193c6291df339606ee58576
+  TextFieldEffects: 8706f53525f1ce51c8921b7af32237caab50c467
+  Then: 823f9813e1d4d0a814a5ba15e9c9d33ec7aca631
+  Toast-Swift: 5b2f8f720f7e78e48511f693df1f9c9a6e38a25a
+
+PODFILE CHECKSUM: f6d8aeca58dc365d073bc9cab8be1e2eb133e6bc
+
+COCOAPODS: 1.4.0.beta.1

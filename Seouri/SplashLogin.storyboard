@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Xiz-c4-1pT">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--SplashVC-->
+        <scene sceneID="36e-fR-okU">
+            <objects>
+                <viewController storyboardIdentifier="SplashVC" id="Xiz-c4-1pT" customClass="SplashVC" customModule="Seouri" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eWC-Nv-fkO"/>
+                        <viewControllerLayoutGuide type="bottom" id="LVh-51-Jl2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5zE-KZ-4cr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="5Xo-hh-83c">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LVh-51-Jl2" firstAttribute="top" secondItem="5Xo-hh-83c" secondAttribute="bottom" id="2l0-zw-Nsf"/>
+                            <constraint firstItem="5Xo-hh-83c" firstAttribute="top" secondItem="5zE-KZ-4cr" secondAttribute="top" id="WJN-QH-22N"/>
+                            <constraint firstItem="5Xo-hh-83c" firstAttribute="leading" secondItem="5zE-KZ-4cr" secondAttribute="leading" id="Yjf-sr-9Oz"/>
+                            <constraint firstAttribute="trailing" secondItem="5Xo-hh-83c" secondAttribute="trailing" id="bGk-Aj-chJ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wd5-Du-zNs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-68" y="-82"/>
+        </scene>
+        <!--LoginVC-->
+        <scene sceneID="LHL-yU-jUW">
+            <objects>
+                <viewController storyboardIdentifier="LoginVC" id="X6X-LF-uOl" customClass="LoginVC" customModule="Seouri" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LL8-wc-38p"/>
+                        <viewControllerLayoutGuide type="bottom" id="hoi-3o-rLA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hmW-fd-8hJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login" translatesAutoresizingMaskIntoConstraints="NO" id="brZ-Hc-pBg">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zf5-BJ-7bM" customClass="UIButtonBorderRadius" customModule="Seouri" customModuleProvider="target">
+                                <rect key="frame" x="36" y="500" width="249" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="249" id="Mdb-fd-neo"/>
+                                    <constraint firstAttribute="height" constant="40" id="ncK-cC-TP5"/>
+                                </constraints>
+                                <state key="normal" title="로그인" image="kakao"/>
+                                <connections>
+                                    <action selector="loginVC:" destination="X6X-LF-uOl" eventType="touchUpInside" id="dRV-df-yPl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="brZ-Hc-pBg" firstAttribute="leading" secondItem="hmW-fd-8hJ" secondAttribute="leading" id="Flb-gk-ZNn"/>
+                            <constraint firstAttribute="trailing" secondItem="brZ-Hc-pBg" secondAttribute="trailing" id="GOw-LG-HLc"/>
+                            <constraint firstItem="brZ-Hc-pBg" firstAttribute="top" secondItem="hmW-fd-8hJ" secondAttribute="top" id="HPy-YT-FCj"/>
+                            <constraint firstItem="Zf5-BJ-7bM" firstAttribute="centerX" secondItem="brZ-Hc-pBg" secondAttribute="centerX" id="JOJ-s8-3cv"/>
+                            <constraint firstItem="hoi-3o-rLA" firstAttribute="top" secondItem="brZ-Hc-pBg" secondAttribute="bottom" id="nOR-6i-DOl"/>
+                            <constraint firstItem="hoi-3o-rLA" firstAttribute="top" secondItem="Zf5-BJ-7bM" secondAttribute="bottom" constant="28" id="rei-rj-x3a"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="login" destination="Zf5-BJ-7bM" id="XWT-CL-744"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3KH-tP-6IW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="617" y="-82"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="kakao" width="249" height="40"/>
+        <image name="login" width="321" height="570"/>
+        <image name="splash" width="321" height="570"/>
+    </resources>
+</document>

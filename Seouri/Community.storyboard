@@ -1,0 +1,1452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OPENAS_비비트리고딕_B_TTF.ttf">
+            <string>BBTreeGB</string>
+        </array>
+        <array key="OPENAS_비비트리고딕_L_TTF.ttf">
+            <string>BBTreeGL</string>
+        </array>
+        <array key="OPENAS_비비트리고딕_R_TTF.ttf">
+            <string>BBTreeGR</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--CommunityVC-->
+        <scene sceneID="Dej-QU-kyV">
+            <objects>
+                <viewController storyboardIdentifier="CommunityVC" id="1wV-Lm-P8f" customClass="CommunityVC" customModule="Seouri" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="trA-OB-u6T"/>
+                        <viewControllerLayoutGuide type="bottom" id="TQe-e2-1os"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KXH-QE-nPr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oeS-yV-q2T" customClass="UIButtonBorderRadius" customModule="Seouri">
+                                <rect key="frame" x="31" y="35" width="258" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="2Bj-nx-Fx9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BBTreeGR" family="BBTreeG_R" pointSize="15"/>
+                                <state key="normal" title="서울시 게시판">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="1" green="0.59999999999999998" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="A8Y-Pk-CBy">
+                                <rect key="frame" x="31" y="91" width="77.5" height="447"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="od6-c2-fO5" customClass="UIButtonBorderRadius" customModule="Seouri" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="77.5" height="41"/>
+                                        <fontDescription key="fontDescription" name="BBTreeGL" family="BBTreeG_L" pointSize="15"/>
+                                        <state key="normal" title="강남구">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.2156862745" green="0.69019607839999997" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wjs-JR-jy5" customClass="UIButtonBorderRadius" customModule="Seouri" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="51" width="77.5" height="40.5"/>
+                                        <fontDescription key="fontDescription" name="BBTreeGL" family="BBTreeG_L" pointSize="15"/>
+                                        <state key="normal" title="강서구">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.2156862745" green="0.69019607839999997" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="va3-zZ-RPl" customClass="UIButtonBorderRadius" customModule="Seouri" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="101.5" width="77.5" height="41"/>
+                                        <fontDescription key="fontDescription" name="BBTreeGL" family="BBTreeG_L" pointSize="15"/>
+                                        <state key="normal" title="구로구">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.2156862745" green="0.69019607839999997" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZP-oU-8Qv" customClass="UIButtonBorderRadius" customModule="Seouri" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="152.5" width="77.5" height="40.5"/>
+                                        <fontDescription key="fontDescription" name="BBTreeGL" family="BBTreeG_L" pointSize="15"/>
+                                        <state key="normal" title="도봉구">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.2156862745" green="0.69019607839999997" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tcx-cr-0VV" customClass="UIButtonBorderRadius" customModule="Seouri" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="203" width="77.5" height="41"/>
+                                        <fontDescription key="fontDescription" name="BBTreeGL" family="BBTreeG_L" pointSize="15"/>
+                                        <state key="normal" title="마포구">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.2156862745" green="0.69019607839999997" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="upi-KY-sGv" customClass="UIButtonBorderRadius" customModule="Seouri" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="254" width="77.5" height="40.5"/>
+                                        <fontDescription key="fontDescription" name="BBTreeGL" family="BBTreeG_L" pointSize="15"/>
+                                        <state key="normal" title="성동구">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.2156862745" green="0.69019607839999997" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="13d-45-9Yn" customClass="UIButtonBorderRadius" customModule="Seouri" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="304.5" width="77.5" height="41"/>
+                                        <fontDescription key="fontDescription" name="BBTreeGL" family="BBTreeG_L" pointSize="15"/>
+                                        <state key="normal" title="양천구">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.2156862745" green="0.69019607839999997" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HWC-tc-nNd" customClass="UIButtonBorderRadius" customModule="Seouri" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="355.5" width="77.5" height="40.5"/>
+                                        <fontDescription key="fontDescription" name="BBTreeGL" family="BBTreeG_L" pointSize="15"/>
+                                        <state key="normal" title="은평구">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.2156862745" green="0.69019607839999997" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fHf-ai-iQF" customClass="UIButtonBorderRadius" customModule="Seouri" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="406" width="77.5" height="41"/>
+                                        <fontDescription key="fontDescription" name="BBTreeGL" family="BBTreeG_L" pointSize="15"/>
+                                        <state key="normal" title="중랑구">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.2156862745" green="0.69019607839999997" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="TtG-Ii-asp">
+                                <rect key="frame" x="121" y="91" width="77.5" height="396"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T1s-Yo-C1e" customClass="UIButtonBorderRadius" customModule="Seouri" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="77.5" height="41"/>
+                                        <fontDescription key="fontDescription" name="BBTreeGL" family="BBTreeG_L" pointSize="15"/>
+                                        <state key="normal" title="강동구">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.2156862745" green="0.69019607839999997" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ye-hJ-dXF" customClass="UIButtonBorderRadius" customModule="Seouri" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="51" width="77.5" height="40.5"/>
+                                        <fontDescription key="fontDescription" name="BBTreeGL" family="BBTreeG_L" pointSize="15"/>
+                                        <state key="normal" title="관악구">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.2156862745" green="0.69019607839999997" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wjb-hB-qkE" customClass="UIButtonBorderRadius" customModule="Seouri" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="101.5" width="77.5" height="41"/>
+                                        <fontDescription key="fontDescription" name="BBTreeGL" family="BBTreeG_L" pointSize="15"/>
+                                        <state key="normal" title="금천구">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.2156862745" green="0.69019607839999997" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0yL-EO-xzw" customClass="UIButtonBorderRadius" customModule="Seouri" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="152.5" width="77.5" height="40.5"/>
+                                        <fontDescription key="fontDescription" name="BBTreeGL" family="BBTreeG_L" pointSize="15"/>
+                                        <state key="normal" title="동대문구">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.2156862745" green="0.69019607839999997" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gJU-pf-8f3" customClass="UIButtonBorderRadius" customModule="Seouri" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="203" width="77.5" height="41"/>
+                                        <fontDescription key="fontDescription" name="BBTreeGL" family="BBTreeG_L" pointSize="15"/>
+                                        <state key="normal" title="서대문구">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.2156862745" green="0.69019607839999997" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gg-8I-ywn" customClass="UIButtonBorderRadius" customModule="Seouri" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="254" width="77.5" height="40.5"/>
+                                        <fontDescription key="fontDescription" name="BBTreeGL" family="BBTreeG_L" pointSize="15"/>
+                                        <state key="normal" title="성북구">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.2156862745" green="0.69019607839999997" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qiz-rh-Oq4" customClass="UIButtonBorderRadius" customModule="Seouri" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="304.5" width="77.5" height="41"/>
+                                        <fontDescription key="fontDescription" name="BBTreeGL" family="BBTreeG_L" pointSize="15"/>
+                                        <state key="normal" title="영등포구">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.2156862745" green="0.69019607839999997" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wa7-Nv-Byq" customClass="UIButtonBorderRadius" customModule="Seouri" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="355.5" width="77.5" height="40.5"/>
+                                        <fontDescription key="fontDescription" name="BBTreeGL" family="BBTreeG_L" pointSize="15"/>
+                                        <state key="normal" title="종로구">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.2156862745" green="0.69019607839999997" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="k1Z-wh-pjn">
+                                <rect key="frame" x="211.5" y="91" width="77.5" height="396"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ROK-Bf-RaS" customClass="UIButtonBorderRadius" customModule="Seouri" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="77.5" height="41"/>
+                                        <fontDescription key="fontDescription" name="BBTreeGL" family="BBTreeG_L" pointSize="15"/>
+                                        <state key="normal" title="강북구">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.2156862745" green="0.69019607839999997" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HEr-Cz-GjM" customClass="UIButtonBorderRadius" customModule="Seouri" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="51" width="77.5" height="40.5"/>
+                                        <fontDescription key="fontDescription" name="BBTreeGL" family="BBTreeG_L" pointSize="15"/>
+                                        <state key="normal" title="광진구">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.2156862745" green="0.69019607839999997" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WF1-NT-4Wq" customClass="UIButtonBorderRadius" customModule="Seouri" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="101.5" width="77.5" height="41"/>
+                                        <fontDescription key="fontDescription" name="BBTreeGL" family="BBTreeG_L" pointSize="15"/>
+                                        <state key="normal" title="노원구">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.2156862745" green="0.69019607839999997" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afR-OR-XCx" customClass="UIButtonBorderRadius" customModule="Seouri" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="152.5" width="77.5" height="40.5"/>
+                                        <fontDescription key="fontDescription" name="BBTreeGL" family="BBTreeG_L" pointSize="15"/>
+                                        <state key="normal" title="동작구">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.2156862745" green="0.69019607839999997" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Du-f2-J1J" customClass="UIButtonBorderRadius" customModule="Seouri" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="203" width="77.5" height="41"/>
+                                        <fontDescription key="fontDescription" name="BBTreeGL" family="BBTreeG_L" pointSize="15"/>
+                                        <state key="normal" title="서초구">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.2156862745" green="0.69019607839999997" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qdo-sc-wR4" customClass="UIButtonBorderRadius" customModule="Seouri" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="254" width="77.5" height="40.5"/>
+                                        <fontDescription key="fontDescription" name="BBTreeGL" family="BBTreeG_L" pointSize="15"/>
+                                        <state key="normal" title="송파구">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.2156862745" green="0.69019607839999997" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QN1-8K-ygL" customClass="UIButtonBorderRadius" customModule="Seouri" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="304.5" width="77.5" height="41"/>
+                                        <fontDescription key="fontDescription" name="BBTreeGL" family="BBTreeG_L" pointSize="15"/>
+                                        <state key="normal" title="용산구">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.2156862745" green="0.69019607839999997" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gh6-Mx-C1k" customClass="UIButtonBorderRadius" customModule="Seouri" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="355.5" width="77.5" height="40.5"/>
+                                        <fontDescription key="fontDescription" name="BBTreeGL" family="BBTreeG_L" pointSize="15"/>
+                                        <state key="normal" title="중구">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.2156862745" green="0.69019607839999997" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TtG-Ii-asp" firstAttribute="bottom" secondItem="HWC-tc-nNd" secondAttribute="bottom" id="6FP-rM-8j9"/>
+                            <constraint firstItem="A8Y-Pk-CBy" firstAttribute="leading" secondItem="oeS-yV-q2T" secondAttribute="leading" id="6eH-l6-GZu"/>
+                            <constraint firstItem="k1Z-wh-pjn" firstAttribute="width" secondItem="TtG-Ii-asp" secondAttribute="width" id="9T5-OC-FQ1"/>
+                            <constraint firstItem="k1Z-wh-pjn" firstAttribute="top" secondItem="TtG-Ii-asp" secondAttribute="top" id="9ba-D8-Bjt"/>
+                            <constraint firstItem="TtG-Ii-asp" firstAttribute="width" secondItem="A8Y-Pk-CBy" secondAttribute="width" id="C9d-GR-i1A"/>
+                            <constraint firstItem="k1Z-wh-pjn" firstAttribute="bottom" secondItem="TtG-Ii-asp" secondAttribute="bottom" id="Iiu-ia-zxi"/>
+                            <constraint firstItem="oeS-yV-q2T" firstAttribute="leading" secondItem="KXH-QE-nPr" secondAttribute="leadingMargin" constant="15" id="T0M-H6-rab"/>
+                            <constraint firstItem="TQe-e2-1os" firstAttribute="top" secondItem="A8Y-Pk-CBy" secondAttribute="bottom" constant="30" id="Uuy-u5-ubM"/>
+                            <constraint firstItem="TtG-Ii-asp" firstAttribute="top" secondItem="oeS-yV-q2T" secondAttribute="bottom" constant="16" id="VMr-V2-Sla"/>
+                            <constraint firstItem="TtG-Ii-asp" firstAttribute="centerX" secondItem="oeS-yV-q2T" secondAttribute="centerX" id="XJz-yo-LHc"/>
+                            <constraint firstItem="k1Z-wh-pjn" firstAttribute="trailing" secondItem="oeS-yV-q2T" secondAttribute="trailing" id="dEf-fW-1BY"/>
+                            <constraint firstItem="oeS-yV-q2T" firstAttribute="top" secondItem="trA-OB-u6T" secondAttribute="bottom" constant="15" id="dOb-GQ-U3q"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oeS-yV-q2T" secondAttribute="trailing" constant="15" id="mXV-RS-iVu"/>
+                            <constraint firstItem="A8Y-Pk-CBy" firstAttribute="width" secondItem="oeS-yV-q2T" secondAttribute="width" multiplier="0.3" id="mgD-bJ-2Pb"/>
+                            <constraint firstItem="A8Y-Pk-CBy" firstAttribute="top" secondItem="oeS-yV-q2T" secondAttribute="bottom" constant="16" id="uK3-1e-H2p"/>
+                            <constraint firstItem="TtG-Ii-asp" firstAttribute="top" secondItem="A8Y-Pk-CBy" secondAttribute="top" id="zPA-RE-O1a"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="all" destination="oeS-yV-q2T" id="bWW-i4-TNG"/>
+                        <outlet property="dobong_gu" destination="AZP-oU-8Qv" id="IAo-4D-5do"/>
+                        <outlet property="dongdaemoon_gu" destination="0yL-EO-xzw" id="Heh-qK-Qag"/>
+                        <outlet property="dongjak_gu" destination="afR-OR-XCx" id="4e3-T8-DdM"/>
+                        <outlet property="eunpyeong_gu" destination="HWC-tc-nNd" id="yb1-rh-IL2"/>
+                        <outlet property="gangbook_gu" destination="ROK-Bf-RaS" id="H2k-U5-ZFP"/>
+                        <outlet property="gangdong_gu" destination="T1s-Yo-C1e" id="bgl-bc-X3R"/>
+                        <outlet property="gangnam_gu" destination="od6-c2-fO5" id="SuC-IQ-hZ3"/>
+                        <outlet property="gangseo_gu" destination="wjs-JR-jy5" id="PXF-qZ-sHV"/>
+                        <outlet property="geumcheon_gu" destination="Wjb-hB-qkE" id="uPR-zi-hxU"/>
+                        <outlet property="guro_gu" destination="va3-zZ-RPl" id="KO2-PG-mb4"/>
+                        <outlet property="gwanak_gu" destination="4ye-hJ-dXF" id="zY5-U8-dZR"/>
+                        <outlet property="gwangjin_gu" destination="HEr-Cz-GjM" id="YeD-9D-XTM"/>
+                        <outlet property="jongro_gu" destination="wa7-Nv-Byq" id="SDF-12-5Uu"/>
+                        <outlet property="joong_gu" destination="gh6-Mx-C1k" id="kAY-hG-muP"/>
+                        <outlet property="joongrang_gu" destination="fHf-ai-iQF" id="NQl-aL-EZL"/>
+                        <outlet property="mapo_gu" destination="tcx-cr-0VV" id="i12-ck-7lt"/>
+                        <outlet property="nowon_gu" destination="WF1-NT-4Wq" id="kNm-2A-0hL"/>
+                        <outlet property="seocho_gu" destination="5Du-f2-J1J" id="TE1-vk-BbO"/>
+                        <outlet property="seodaemoon_gu" destination="gJU-pf-8f3" id="bn1-0B-hbH"/>
+                        <outlet property="songpa_gu" destination="Qdo-sc-wR4" id="t40-xu-Ipz"/>
+                        <outlet property="sungbook_gu" destination="3gg-8I-ywn" id="Axa-u2-DjE"/>
+                        <outlet property="sungdong_gu" destination="upi-KY-sGv" id="beJ-kg-Gb7"/>
+                        <outlet property="sv_1" destination="A8Y-Pk-CBy" id="lHo-L5-tIE"/>
+                        <outlet property="sv_2" destination="TtG-Ii-asp" id="FrW-Zv-hm4"/>
+                        <outlet property="sv_3" destination="k1Z-wh-pjn" id="ZAx-Lq-pEu"/>
+                        <outlet property="yangcheon_gu" destination="13d-45-9Yn" id="Hpe-PM-PEv"/>
+                        <outlet property="yeongdeungpo_gu" destination="qiz-rh-Oq4" id="TBg-4i-U3U"/>
+                        <outlet property="yongsan_gu" destination="QN1-8K-ygL" id="whO-vd-0Dp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mSc-JO-wT9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="68" y="101.19940029985008"/>
+        </scene>
+        <!--Community Post ListVC-->
+        <scene sceneID="QhN-Xy-KHJ">
+            <objects>
+                <viewController storyboardIdentifier="CommunityPostListVC" id="7Nw-k1-Mpu" customClass="CommunityPostListVC" customModule="Seouri" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SVG-v3-8Bj"/>
+                        <viewControllerLayoutGuide type="bottom" id="BpM-NR-jjT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1En-72-n8n">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="verybigsearch" translatesAutoresizingMaskIntoConstraints="NO" id="912-ef-gQK">
+                                <rect key="frame" x="98.5" y="208.5" width="123" height="151"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" background="yellowszquare" translatesAutoresizingMaskIntoConstraints="NO" id="MUK-jl-pE6" customClass="PaddingTextField" customModule="Seouri" customModuleProvider="target">
+                                <rect key="frame" x="15" y="67" width="290" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="KcD-Ou-Uvv"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="BBTreeGL" family="BBTreeG_L" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="게시글이 존재하지 않습니다" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e6f-uv-piN">
+                                <rect key="frame" x="51.5" y="272" width="217" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.87450980389999999" green="0.87450980389999999" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h7c-q9-9hV">
+                                <rect key="frame" x="272" y="67" width="33" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="33" id="GEx-1K-wNv"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="search-1"/>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3b8-H5-7br">
+                                <rect key="frame" x="0.0" y="66" width="320" height="502"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostListCell" rowHeight="80" id="MqM-p5-Pcq" customClass="PostListCell" customModule="Seouri" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MqM-p5-Pcq" id="YLm-mx-3Qw">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="79.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="36M-Sh-tvN">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="2"/>
+                                                    <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="2" id="SbY-0x-Q5p"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bKW-b9-ZgE">
+                                                    <rect key="frame" x="0.0" y="74.5" width="320" height="2"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="2" id="ywf-XK-jfW"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tGD-Gh-G0d">
+                                                    <rect key="frame" x="8" y="8" width="20" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="EGA-k5-Hww"/>
+                                                        <constraint firstAttribute="width" constant="20" id="Mxk-wW-gOK"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="희망마을 운영자" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p60-o4-6Yw">
+                                                    <rect key="frame" x="31" y="9" width="89" height="17"/>
+                                                    <fontDescription key="fontDescription" name="BBTreeGR" family="BBTreeG_R" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17.08.18. 07:45" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ks-rr-hQN">
+                                                    <rect key="frame" x="221.5" y="11" width="83.5" height="13.5"/>
+                                                    <fontDescription key="fontDescription" name="BBTreeGL" family="BBTreeG_L" pointSize="12"/>
+                                                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="희망마을 운영자가 누구일까요 알아맞춰보" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KnP-ZJ-cvB">
+                                                    <rect key="frame" x="8" y="36" width="279" height="21"/>
+                                                    <fontDescription key="fontDescription" name="BBTreeGR" family="BBTreeG_R" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="조회수 37" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IBl-v7-sPu">
+                                                    <rect key="frame" x="257" y="57" width="48" height="14"/>
+                                                    <fontDescription key="fontDescription" name="BBTreeGL" family="BBTreeG_L" pointSize="12"/>
+                                                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="tGD-Gh-G0d" firstAttribute="leading" secondItem="YLm-mx-3Qw" secondAttribute="leading" constant="8" id="8W1-2P-58T"/>
+                                                <constraint firstItem="36M-Sh-tvN" firstAttribute="leading" secondItem="YLm-mx-3Qw" secondAttribute="leading" id="A3L-TG-Qm2"/>
+                                                <constraint firstItem="KnP-ZJ-cvB" firstAttribute="top" secondItem="tGD-Gh-G0d" secondAttribute="bottom" constant="8" id="C2y-nG-Lye"/>
+                                                <constraint firstAttribute="trailing" secondItem="4ks-rr-hQN" secondAttribute="trailing" constant="15" id="EAp-J9-cfX"/>
+                                                <constraint firstItem="p60-o4-6Yw" firstAttribute="centerY" secondItem="tGD-Gh-G0d" secondAttribute="centerY" id="GuG-Cb-NUY"/>
+                                                <constraint firstItem="KnP-ZJ-cvB" firstAttribute="leading" secondItem="tGD-Gh-G0d" secondAttribute="leading" id="M2Q-at-pKy"/>
+                                                <constraint firstItem="tGD-Gh-G0d" firstAttribute="top" secondItem="36M-Sh-tvN" secondAttribute="bottom" constant="6" id="M75-Rk-3KN"/>
+                                                <constraint firstItem="4ks-rr-hQN" firstAttribute="centerY" secondItem="p60-o4-6Yw" secondAttribute="centerY" id="OfV-h9-fsH"/>
+                                                <constraint firstItem="4ks-rr-hQN" firstAttribute="top" secondItem="YLm-mx-3Qw" secondAttribute="top" constant="11" id="QkG-2Q-uaJ"/>
+                                                <constraint firstAttribute="bottom" secondItem="KnP-ZJ-cvB" secondAttribute="bottom" constant="22.5" id="VIa-KF-luN"/>
+                                                <constraint firstAttribute="bottom" secondItem="bKW-b9-ZgE" secondAttribute="bottom" constant="3" id="WGd-3o-OQU"/>
+                                                <constraint firstAttribute="bottom" secondItem="IBl-v7-sPu" secondAttribute="bottom" constant="8.5" id="Zax-TH-qqs"/>
+                                                <constraint firstItem="bKW-b9-ZgE" firstAttribute="leading" secondItem="YLm-mx-3Qw" secondAttribute="leading" id="bxR-jF-sGW"/>
+                                                <constraint firstAttribute="trailing" secondItem="bKW-b9-ZgE" secondAttribute="trailing" id="ehx-GF-xUk"/>
+                                                <constraint firstItem="IBl-v7-sPu" firstAttribute="top" secondItem="4ks-rr-hQN" secondAttribute="bottom" constant="32.5" id="fa1-Ee-Ii7"/>
+                                                <constraint firstItem="IBl-v7-sPu" firstAttribute="trailing" secondItem="4ks-rr-hQN" secondAttribute="trailing" id="gTv-22-GSU"/>
+                                                <constraint firstItem="4ks-rr-hQN" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="p60-o4-6Yw" secondAttribute="trailing" constant="10" id="mlv-8U-zbj"/>
+                                                <constraint firstItem="p60-o4-6Yw" firstAttribute="top" secondItem="YLm-mx-3Qw" secondAttribute="top" constant="9" id="n1r-2B-UNe"/>
+                                                <constraint firstItem="36M-Sh-tvN" firstAttribute="top" secondItem="YLm-mx-3Qw" secondAttribute="top" id="old-n5-imp"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="KnP-ZJ-cvB" secondAttribute="trailing" constant="15" id="tJg-9Q-W2I"/>
+                                                <constraint firstAttribute="trailing" secondItem="36M-Sh-tvN" secondAttribute="trailing" id="wpM-FC-7J4"/>
+                                                <constraint firstItem="tGD-Gh-G0d" firstAttribute="top" secondItem="YLm-mx-3Qw" secondAttribute="top" constant="8" id="xdv-6G-LZl"/>
+                                                <constraint firstItem="p60-o4-6Yw" firstAttribute="leading" secondItem="tGD-Gh-G0d" secondAttribute="trailing" constant="3" id="yJX-Oo-3rV"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="hits" destination="IBl-v7-sPu" id="PWh-P8-M42"/>
+                                            <outlet property="title" destination="KnP-ZJ-cvB" id="iw0-h1-piE"/>
+                                            <outlet property="writer_img" destination="tGD-Gh-G0d" id="gex-fq-duh"/>
+                                            <outlet property="writer_txt" destination="p60-o4-6Yw" id="DT3-q3-SNb"/>
+                                            <outlet property="wroten_time" destination="4ks-rr-hQN" id="9K6-LE-aen"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kU5-nZ-8Mo">
+                                <rect key="frame" x="15" y="25" width="59" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="JDb-CG-kQ5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title=" 검색" image="search">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eye-eH-0lS">
+                                <rect key="frame" x="225" y="25" width="77" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="KnF-cd-o5N"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title=" 글쓰기" image="pen-1">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="writePost:" destination="7Nw-k1-Mpu" eventType="touchUpInside" id="aWx-FH-Nz6"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="95j-NQ-SHg">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="3"/>
+                                <color key="backgroundColor" red="0.81568627450980391" green="0.92941176470588238" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="3" id="GZb-WW-TyH"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="95j-NQ-SHg" firstAttribute="top" secondItem="1En-72-n8n" secondAttribute="top" id="1cW-dY-0SL"/>
+                            <constraint firstItem="95j-NQ-SHg" firstAttribute="leading" secondItem="1En-72-n8n" secondAttribute="leading" id="5cn-5N-vGN"/>
+                            <constraint firstItem="MUK-jl-pE6" firstAttribute="top" secondItem="kU5-nZ-8Mo" secondAttribute="bottom" constant="10" id="6eR-va-NLc"/>
+                            <constraint firstItem="h7c-q9-9hV" firstAttribute="bottom" secondItem="MUK-jl-pE6" secondAttribute="bottom" constant="4" id="7bH-u8-4E2"/>
+                            <constraint firstItem="3b8-H5-7br" firstAttribute="bottom" secondItem="BpM-NR-jjT" secondAttribute="top" id="ASo-x1-TjW"/>
+                            <constraint firstItem="3b8-H5-7br" firstAttribute="top" secondItem="eye-eH-0lS" secondAttribute="bottom" constant="9" id="BuM-tP-qK6"/>
+                            <constraint firstItem="eye-eH-0lS" firstAttribute="top" secondItem="SVG-v3-8Bj" secondAttribute="bottom" constant="5" id="E9g-Qg-FZ8"/>
+                            <constraint firstAttribute="trailing" secondItem="eye-eH-0lS" secondAttribute="trailing" constant="18" id="FZc-Ln-gTL"/>
+                            <constraint firstItem="kU5-nZ-8Mo" firstAttribute="leading" secondItem="1En-72-n8n" secondAttribute="leading" constant="15" id="Fsl-qh-gNG"/>
+                            <constraint firstItem="3b8-H5-7br" firstAttribute="trailing" secondItem="1En-72-n8n" secondAttribute="trailing" id="J9E-t7-K9I"/>
+                            <constraint firstItem="912-ef-gQK" firstAttribute="centerX" secondItem="1En-72-n8n" secondAttribute="centerX" id="OTq-Zi-897"/>
+                            <constraint firstAttribute="trailing" secondItem="95j-NQ-SHg" secondAttribute="trailing" id="Roq-7X-Fyf"/>
+                            <constraint firstItem="h7c-q9-9hV" firstAttribute="centerY" secondItem="MUK-jl-pE6" secondAttribute="centerY" constant="2" id="Vtl-Of-bzY"/>
+                            <constraint firstItem="kU5-nZ-8Mo" firstAttribute="centerY" secondItem="eye-eH-0lS" secondAttribute="centerY" id="WCY-UT-v4O"/>
+                            <constraint firstItem="h7c-q9-9hV" firstAttribute="trailing" secondItem="MUK-jl-pE6" secondAttribute="trailing" id="Xjt-JL-FE6"/>
+                            <constraint firstItem="e6f-uv-piN" firstAttribute="centerY" secondItem="1En-72-n8n" secondAttribute="centerY" id="iT1-Fq-ezz"/>
+                            <constraint firstItem="kU5-nZ-8Mo" firstAttribute="top" secondItem="SVG-v3-8Bj" secondAttribute="bottom" constant="5" id="lJK-se-l7s"/>
+                            <constraint firstItem="MUK-jl-pE6" firstAttribute="leading" secondItem="kU5-nZ-8Mo" secondAttribute="leading" id="nl7-xI-6MP"/>
+                            <constraint firstItem="h7c-q9-9hV" firstAttribute="top" secondItem="MUK-jl-pE6" secondAttribute="top" id="pT7-Oi-Duz"/>
+                            <constraint firstItem="912-ef-gQK" firstAttribute="centerY" secondItem="1En-72-n8n" secondAttribute="centerY" id="w3e-pY-i0M"/>
+                            <constraint firstItem="e6f-uv-piN" firstAttribute="centerX" secondItem="1En-72-n8n" secondAttribute="centerX" id="wi8-hP-6pa"/>
+                            <constraint firstItem="3b8-H5-7br" firstAttribute="leading" secondItem="1En-72-n8n" secondAttribute="leading" id="xQF-Ef-Lqt"/>
+                            <constraint firstAttribute="trailing" secondItem="MUK-jl-pE6" secondAttribute="trailing" constant="15" id="xd2-ta-bad"/>
+                            <constraint firstItem="3b8-H5-7br" firstAttribute="top" secondItem="kU5-nZ-8Mo" secondAttribute="bottom" constant="9" id="zf7-RK-hs1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activate_search_btn" destination="kU5-nZ-8Mo" id="aLD-mT-XVX"/>
+                        <outlet property="noPost" destination="e6f-uv-piN" id="3vk-rb-fA2"/>
+                        <outlet property="postList" destination="3b8-H5-7br" id="4N6-IT-kep"/>
+                        <outlet property="searchBtn" destination="h7c-q9-9hV" id="sbH-qt-D2m"/>
+                        <outlet property="searchTxt" destination="MUK-jl-pE6" id="Zbr-jC-jO6"/>
+                        <outlet property="very_big_search" destination="912-ef-gQK" id="mxe-hK-Fes"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CN9-Wa-hc8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="797.60000000000002" y="101.19940029985008"/>
+        </scene>
+        <!--Community Post WriteVC-->
+        <scene sceneID="aGz-4j-agS">
+            <objects>
+                <viewController storyboardIdentifier="CommunityPostWriteVC" id="lG8-sm-wC9" customClass="CommunityPostWriteVC" customModule="Seouri" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fda-h5-cM6"/>
+                        <viewControllerLayoutGuide type="bottom" id="Pon-Ue-cfg"/>
+                    </layoutGuides>
+                    <view key="view" userInteractionEnabled="NO" contentMode="scaleToFill" id="vo5-ah-Hvi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="제목 :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g8w-th-Owu">
+                                <rect key="frame" x="24" y="35" width="39" height="20"/>
+                                <fontDescription key="fontDescription" name="BBTreeGB" family="BBTreeG_B" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="C65-gH-ppZ">
+                                <rect key="frame" x="15" y="63" width="290" height="2"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="uwo-XA-h1q"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dFQ-cj-R17">
+                                <rect key="frame" x="190" y="140" width="115" height="2"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="VHo-ax-gOW"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="첨부파일 이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="74x-43-58m">
+                                <rect key="frame" x="190" y="114" width="77" height="16.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="76.5" id="n88-qK-bzC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BBTreeGL" family="BBTreeG_L" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pW3-kU-hTT">
+                                <rect key="frame" x="105.5" y="485" width="109" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="JWc-br-Nhv"/>
+                                    <constraint firstAttribute="width" constant="109" id="n1N-sH-OSE"/>
+                                </constraints>
+                                <state key="normal" image="okay">
+                                    <color key="titleColor" red="1" green="0.59999999999999998" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="okButton:" destination="lG8-sm-wC9" eventType="touchUpInside" id="5Cy-lt-5zc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w77-Tb-mZ0">
+                                <rect key="frame" x="275" y="107" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="TbO-PY-MRZ"/>
+                                    <constraint firstAttribute="height" constant="30" id="si2-VV-MMn"/>
+                                </constraints>
+                                <state key="normal" image="clip"/>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IqL-pm-7tr">
+                                <rect key="frame" x="15" y="182" width="290" height="288"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SEH-wj-YFL" customClass="KMPlaceholderTextView" customModule="KMPlaceholderTextView">
+                                        <rect key="frame" x="5" y="5" width="280" height="155"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value=" 내용을 입력해주세요"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textView>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ue7-hr-4mp">
+                                        <rect key="frame" x="5" y="170" width="280" height="113"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="113" id="3ue-Vo-iqr"/>
+                                        </constraints>
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="8Bs-uE-Tw6">
+                                            <size key="itemSize" width="113" height="128"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PostWriteCollectionCell" id="Rcp-oQ-tFN" customClass="PostWriteCollectionCell" customModule="Seouri" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="-7.5" width="113" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                                    <rect key="frame" x="0.0" y="0.0" width="113" height="128"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noImage" translatesAutoresizingMaskIntoConstraints="NO" id="7El-GK-w9J">
+                                                            <rect key="frame" x="0.0" y="0.0" width="113" height="128"/>
+                                                        </imageView>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lLj-fX-FrZ">
+                                                            <rect key="frame" x="43" y="53" width="26" height="22"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="26" id="Vc0-xc-cwf"/>
+                                                                <constraint firstAttribute="height" constant="22" id="mWo-ni-rvV"/>
+                                                            </constraints>
+                                                            <state key="normal" image="imgMore"/>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="07u-BH-5fY">
+                                                            <rect key="frame" x="81" y="10" width="27" height="27"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="27" id="KKS-Ao-E3k"/>
+                                                                <constraint firstAttribute="width" constant="27" id="vlq-zv-GrR"/>
+                                                            </constraints>
+                                                            <state key="normal" image="minus_btn"/>
+                                                        </button>
+                                                    </subviews>
+                                                </view>
+                                                <constraints>
+                                                    <constraint firstItem="07u-BH-5fY" firstAttribute="top" secondItem="7El-GK-w9J" secondAttribute="top" constant="10" id="AX7-6O-Hsf"/>
+                                                    <constraint firstItem="7El-GK-w9J" firstAttribute="leading" secondItem="Rcp-oQ-tFN" secondAttribute="leading" id="Vnf-6m-08n"/>
+                                                    <constraint firstItem="07u-BH-5fY" firstAttribute="trailing" secondItem="7El-GK-w9J" secondAttribute="trailing" constant="-5" id="hLS-mJ-v55"/>
+                                                    <constraint firstItem="lLj-fX-FrZ" firstAttribute="centerY" secondItem="Rcp-oQ-tFN" secondAttribute="centerY" id="knx-OI-bZE"/>
+                                                    <constraint firstItem="lLj-fX-FrZ" firstAttribute="centerX" secondItem="Rcp-oQ-tFN" secondAttribute="centerX" id="n7x-QJ-ChY"/>
+                                                    <constraint firstItem="7El-GK-w9J" firstAttribute="top" secondItem="Rcp-oQ-tFN" secondAttribute="top" id="uvP-9i-Bpb"/>
+                                                    <constraint firstAttribute="trailing" secondItem="7El-GK-w9J" secondAttribute="trailing" id="vZc-xc-Pzs"/>
+                                                    <constraint firstAttribute="bottom" secondItem="7El-GK-w9J" secondAttribute="bottom" id="zgq-ae-IUq"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outlet property="add_photo" destination="lLj-fX-FrZ" id="nBW-GM-J6Y"/>
+                                                    <outlet property="minus_btn" destination="07u-BH-5fY" id="nyu-6s-sHw"/>
+                                                    <outlet property="write_img" destination="7El-GK-w9J" id="GuF-bY-Wct"/>
+                                                </connections>
+                                            </collectionViewCell>
+                                        </cells>
+                                    </collectionView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="ue7-hr-4mp" firstAttribute="leading" secondItem="IqL-pm-7tr" secondAttribute="leading" constant="5" id="E71-Hg-Z5L"/>
+                                    <constraint firstItem="SEH-wj-YFL" firstAttribute="leading" secondItem="IqL-pm-7tr" secondAttribute="leading" constant="5" id="TyF-1K-vox"/>
+                                    <constraint firstAttribute="trailing" secondItem="SEH-wj-YFL" secondAttribute="trailing" constant="5" id="ZuF-ew-cQn"/>
+                                    <constraint firstAttribute="bottom" secondItem="ue7-hr-4mp" secondAttribute="bottom" constant="5" id="c7T-8z-QCI"/>
+                                    <constraint firstAttribute="trailing" secondItem="ue7-hr-4mp" secondAttribute="trailing" constant="5" id="fv1-uc-NiN"/>
+                                    <constraint firstItem="SEH-wj-YFL" firstAttribute="top" secondItem="IqL-pm-7tr" secondAttribute="top" constant="5" id="gSe-Nc-1h1"/>
+                                    <constraint firstItem="ue7-hr-4mp" firstAttribute="top" secondItem="SEH-wj-YFL" secondAttribute="bottom" constant="10" id="yPk-mW-MK3"/>
+                                </constraints>
+                            </view>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="제목을 입력해주세요(최대 20자)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Up-0F-KL4">
+                                <rect key="frame" x="72" y="32" width="233" height="26"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="BBTreeGL" family="BBTreeG_L" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="C65-gH-ppZ" firstAttribute="top" secondItem="g8w-th-Owu" secondAttribute="bottom" constant="8" id="15p-0A-MHY"/>
+                            <constraint firstItem="74x-43-58m" firstAttribute="centerY" secondItem="w77-Tb-mZ0" secondAttribute="centerY" id="1sG-Zq-3j8"/>
+                            <constraint firstAttribute="trailing" secondItem="C65-gH-ppZ" secondAttribute="trailing" constant="15" id="DPC-C1-Jkx"/>
+                            <constraint firstItem="2Up-0F-KL4" firstAttribute="leading" secondItem="g8w-th-Owu" secondAttribute="trailing" constant="9" id="Ka9-xW-vX6"/>
+                            <constraint firstItem="g8w-th-Owu" firstAttribute="leading" secondItem="vo5-ah-Hvi" secondAttribute="leading" constant="24" id="P5J-SW-YNV"/>
+                            <constraint firstItem="dFQ-cj-R17" firstAttribute="trailing" secondItem="w77-Tb-mZ0" secondAttribute="trailing" id="PlD-mk-Qvx"/>
+                            <constraint firstItem="w77-Tb-mZ0" firstAttribute="trailing" secondItem="C65-gH-ppZ" secondAttribute="trailing" id="QrN-Hj-vBq"/>
+                            <constraint firstItem="2Up-0F-KL4" firstAttribute="centerY" secondItem="g8w-th-Owu" secondAttribute="centerY" id="XF2-zp-QaB"/>
+                            <constraint firstItem="C65-gH-ppZ" firstAttribute="top" secondItem="2Up-0F-KL4" secondAttribute="bottom" constant="5" id="aE0-bQ-6Lf"/>
+                            <constraint firstItem="w77-Tb-mZ0" firstAttribute="leading" secondItem="74x-43-58m" secondAttribute="trailing" constant="8" id="bkY-mt-pvH"/>
+                            <constraint firstItem="74x-43-58m" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vo5-ah-Hvi" secondAttribute="leading" constant="15" id="e9W-vx-rCM"/>
+                            <constraint firstItem="IqL-pm-7tr" firstAttribute="leading" secondItem="vo5-ah-Hvi" secondAttribute="leading" constant="15" id="fG4-K9-hUi"/>
+                            <constraint firstItem="Pon-Ue-cfg" firstAttribute="top" secondItem="pW3-kU-hTT" secondAttribute="bottom" constant="30" id="gF8-ph-eme"/>
+                            <constraint firstItem="2Up-0F-KL4" firstAttribute="trailing" secondItem="C65-gH-ppZ" secondAttribute="trailing" id="gvu-ae-fUF"/>
+                            <constraint firstItem="pW3-kU-hTT" firstAttribute="centerX" secondItem="vo5-ah-Hvi" secondAttribute="centerX" id="j5M-xI-EQF"/>
+                            <constraint firstItem="pW3-kU-hTT" firstAttribute="top" secondItem="IqL-pm-7tr" secondAttribute="bottom" constant="15" id="kDn-Pu-CXV"/>
+                            <constraint firstItem="IqL-pm-7tr" firstAttribute="trailing" secondItem="vo5-ah-Hvi" secondAttribute="trailing" constant="-15" id="o3Q-xg-g9q"/>
+                            <constraint firstItem="IqL-pm-7tr" firstAttribute="top" secondItem="dFQ-cj-R17" secondAttribute="bottom" constant="40" id="p5w-ER-3XK"/>
+                            <constraint firstItem="w77-Tb-mZ0" firstAttribute="top" secondItem="C65-gH-ppZ" secondAttribute="bottom" constant="42" id="s7o-j7-Adu"/>
+                            <constraint firstItem="dFQ-cj-R17" firstAttribute="top" secondItem="w77-Tb-mZ0" secondAttribute="bottom" constant="3" id="t4O-VX-gRr"/>
+                            <constraint firstItem="C65-gH-ppZ" firstAttribute="leading" secondItem="vo5-ah-Hvi" secondAttribute="leading" constant="15" id="tlj-NF-mtB"/>
+                            <constraint firstItem="dFQ-cj-R17" firstAttribute="leading" secondItem="74x-43-58m" secondAttribute="leading" id="xa8-3f-gNN"/>
+                            <constraint firstItem="g8w-th-Owu" firstAttribute="top" secondItem="fda-h5-cM6" secondAttribute="bottom" constant="15" id="xoO-N7-4dP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="add_image" destination="w77-Tb-mZ0" id="sFa-Rd-G3h"/>
+                        <outlet property="content" destination="SEH-wj-YFL" id="kEn-3u-3F2"/>
+                        <outlet property="contentView" destination="IqL-pm-7tr" id="okj-uh-lCx"/>
+                        <outlet property="img_number" destination="74x-43-58m" id="r8Y-Vj-xgT"/>
+                        <outlet property="mainView" destination="vo5-ah-Hvi" id="tSj-Zz-x4P"/>
+                        <outlet property="photo_collection" destination="ue7-hr-4mp" id="YDa-Ul-E6d"/>
+                        <outlet property="titleTxt" destination="2Up-0F-KL4" id="Jqx-St-z1q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="01z-NP-aCR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1455" y="99.295774647887328"/>
+        </scene>
+        <!--Community Post DetailVC-->
+        <scene sceneID="NO3-dL-N4D">
+            <objects>
+                <viewController storyboardIdentifier="CommunityPostDetailVC" id="e86-Qh-3hY" customClass="CommunityPostDetailVC" customModule="Seouri" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="j9Z-yQ-Eye"/>
+                        <viewControllerLayoutGuide type="bottom" id="X2s-iW-YRI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4JZ-Iw-nkx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="717"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2RI-LB-YxZ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="646.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PostDetailCell" rowHeight="525" id="ycf-XF-Jvm" customClass="PostDetailCell" customModule="Seouri" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="525"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ycf-XF-Jvm" id="4n2-rP-y5b">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="524.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qLb-7d-h26">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="6"/>
+                                                    <color key="backgroundColor" red="0.81568627450980391" green="0.92941176470588238" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="6" id="iMP-lT-FSP"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WXC-F2-isH">
+                                                    <rect key="frame" x="14" y="17" width="40" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="40" id="1Ip-Op-ysf"/>
+                                                        <constraint firstAttribute="height" constant="40" id="tWJ-ee-Dgx"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="희망마을 운영자" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kke-We-pzF">
+                                                    <rect key="frame" x="69" y="27.5" width="108" height="20"/>
+                                                    <fontDescription key="fontDescription" name="BBTreeGB" family="BBTreeG_B" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17.08.18. 07:45" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5kp-RZ-zUj">
+                                                    <rect key="frame" x="276.5" y="30.5" width="83.5" height="14"/>
+                                                    <fontDescription key="fontDescription" name="BBTreeGL" family="BBTreeG_L" pointSize="12"/>
+                                                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8zI-0r-REM">
+                                                    <rect key="frame" x="14" y="76" width="346" height="267.5"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="125" id="gIl-H0-6zO"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES"/>
+                                                </textView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="II9-ZT-U6Z">
+                                                    <rect key="frame" x="0.0" y="65" width="375" height="1"/>
+                                                    <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="28A-wN-05g"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="VjR-a7-Fiz">
+                                                    <rect key="frame" x="15" y="351.5" width="345" height="128"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="128" id="9OS-Tn-AXu"/>
+                                                    </constraints>
+                                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="7PG-pL-OQb">
+                                                        <size key="itemSize" width="130" height="120"/>
+                                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    </collectionViewFlowLayout>
+                                                    <cells>
+                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PostDetailCollectionCell" id="rcZ-Ta-XeP" customClass="PostDetailCollectionCell" customModule="Seouri" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="4" width="130" height="120"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                                                <rect key="frame" x="0.0" y="0.0" width="130" height="120"/>
+                                                                <autoresizingMask key="autoresizingMask"/>
+                                                                <subviews>
+                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iGb-hO-fNJ">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="130" height="120"/>
+                                                                    </imageView>
+                                                                </subviews>
+                                                            </view>
+                                                            <constraints>
+                                                                <constraint firstAttribute="trailing" secondItem="iGb-hO-fNJ" secondAttribute="trailing" id="PHS-Yh-QdK"/>
+                                                                <constraint firstItem="iGb-hO-fNJ" firstAttribute="leading" secondItem="rcZ-Ta-XeP" secondAttribute="leading" id="dbK-YV-ZFo"/>
+                                                                <constraint firstItem="iGb-hO-fNJ" firstAttribute="top" secondItem="rcZ-Ta-XeP" secondAttribute="top" id="gtT-HR-gCq"/>
+                                                                <constraint firstAttribute="bottom" secondItem="iGb-hO-fNJ" secondAttribute="bottom" id="j1I-iL-ugx"/>
+                                                            </constraints>
+                                                            <connections>
+                                                                <outlet property="post_img" destination="iGb-hO-fNJ" id="0AW-n0-bzL"/>
+                                                            </connections>
+                                                        </collectionViewCell>
+                                                    </cells>
+                                                </collectionView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="댓글" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fH1-53-wgn">
+                                                    <rect key="frame" x="15" y="504.5" width="30" height="20"/>
+                                                    <fontDescription key="fontDescription" name="BBTreeGR" family="BBTreeG_R" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tb0-PC-8J5">
+                                                    <rect key="frame" x="323" y="486.5" width="37" height="29"/>
+                                                    <fontDescription key="fontDescription" name="BBTreeGL" family="BBTreeG_L" pointSize="14"/>
+                                                    <state key="normal" title="더보기">
+                                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    </state>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="fH1-53-wgn" firstAttribute="leading" secondItem="4n2-rP-y5b" secondAttribute="leading" constant="15" id="5Yy-SR-hgO"/>
+                                                <constraint firstItem="II9-ZT-U6Z" firstAttribute="leading" secondItem="4n2-rP-y5b" secondAttribute="leading" id="8OZ-xW-l1q"/>
+                                                <constraint firstItem="8zI-0r-REM" firstAttribute="top" secondItem="II9-ZT-U6Z" secondAttribute="bottom" constant="10" id="AbT-TF-U7l"/>
+                                                <constraint firstItem="VjR-a7-Fiz" firstAttribute="leading" secondItem="fH1-53-wgn" secondAttribute="leading" id="ApB-ec-frl"/>
+                                                <constraint firstAttribute="trailing" secondItem="qLb-7d-h26" secondAttribute="trailing" id="CuV-0R-H7Q"/>
+                                                <constraint firstItem="qLb-7d-h26" firstAttribute="top" secondItem="4n2-rP-y5b" secondAttribute="top" id="DZO-vP-7o1"/>
+                                                <constraint firstItem="kke-We-pzF" firstAttribute="centerY" secondItem="WXC-F2-isH" secondAttribute="centerY" id="EO3-pZ-RFP"/>
+                                                <constraint firstItem="8zI-0r-REM" firstAttribute="trailing" secondItem="5kp-RZ-zUj" secondAttribute="trailing" id="JBl-NR-LRd"/>
+                                                <constraint firstAttribute="trailing" secondItem="II9-ZT-U6Z" secondAttribute="trailing" id="JNi-tw-7SF"/>
+                                                <constraint firstItem="8zI-0r-REM" firstAttribute="leading" secondItem="WXC-F2-isH" secondAttribute="leading" id="Kw4-0P-U7O"/>
+                                                <constraint firstAttribute="trailing" secondItem="5kp-RZ-zUj" secondAttribute="trailing" constant="15" id="LhW-lr-Ndb"/>
+                                                <constraint firstAttribute="trailing" secondItem="VjR-a7-Fiz" secondAttribute="trailing" constant="15" id="Lx9-Jm-Apo"/>
+                                                <constraint firstAttribute="bottom" secondItem="fH1-53-wgn" secondAttribute="bottom" id="Nte-tZ-pl3"/>
+                                                <constraint firstItem="VjR-a7-Fiz" firstAttribute="top" secondItem="8zI-0r-REM" secondAttribute="bottom" constant="8" id="PqW-qi-otb"/>
+                                                <constraint firstAttribute="bottom" secondItem="tb0-PC-8J5" secondAttribute="bottom" constant="9" id="QsY-gm-kPr"/>
+                                                <constraint firstItem="qLb-7d-h26" firstAttribute="leading" secondItem="4n2-rP-y5b" secondAttribute="leading" id="Tvk-aY-l8G"/>
+                                                <constraint firstItem="tb0-PC-8J5" firstAttribute="trailing" secondItem="VjR-a7-Fiz" secondAttribute="trailing" id="aZz-ST-QGA"/>
+                                                <constraint firstItem="kke-We-pzF" firstAttribute="leading" secondItem="WXC-F2-isH" secondAttribute="trailing" constant="15" id="c54-H3-ENv"/>
+                                                <constraint firstItem="II9-ZT-U6Z" firstAttribute="top" secondItem="WXC-F2-isH" secondAttribute="bottom" constant="8" id="cAJ-jO-PPp"/>
+                                                <constraint firstItem="fH1-53-wgn" firstAttribute="top" secondItem="VjR-a7-Fiz" secondAttribute="bottom" constant="25" id="ff6-Ic-SgW"/>
+                                                <constraint firstItem="5kp-RZ-zUj" firstAttribute="centerY" secondItem="kke-We-pzF" secondAttribute="centerY" id="n42-zx-pib"/>
+                                                <constraint firstItem="WXC-F2-isH" firstAttribute="top" secondItem="qLb-7d-h26" secondAttribute="bottom" constant="11" id="oYR-Jq-brW"/>
+                                                <constraint firstItem="WXC-F2-isH" firstAttribute="leading" secondItem="4n2-rP-y5b" secondAttribute="leading" constant="14" id="qMH-rc-Pi2"/>
+                                                <constraint firstItem="5kp-RZ-zUj" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="kke-We-pzF" secondAttribute="trailing" constant="10" id="yEO-Fb-ash"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="content" destination="8zI-0r-REM" id="y02-Zz-GWm"/>
+                                            <outlet property="more_see" destination="tb0-PC-8J5" id="67D-nd-OHc"/>
+                                            <outlet property="photo_collection" destination="VjR-a7-Fiz" id="SYA-m8-fQ8"/>
+                                            <outlet property="time" destination="5kp-RZ-zUj" id="LOk-y8-pu7"/>
+                                            <outlet property="writer" destination="kke-We-pzF" id="jsE-rg-YlF"/>
+                                            <outlet property="writer_img" destination="WXC-F2-isH" id="kS2-s5-VMk"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCommentCell" rowHeight="66" id="hNS-3l-Hyg" customClass="PostCommentCell" customModule="Seouri" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="553" width="375" height="66"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hNS-3l-Hyg" id="Jws-Hf-qX6">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="65.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="옹송우" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XdG-FF-O4h">
+                                                    <rect key="frame" x="15" y="22.5" width="45" height="20"/>
+                                                    <fontDescription key="fontDescription" name="BBTreeGB" family="BBTreeG_B" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="맛잇겠네요!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5kN-nb-o8g">
+                                                    <rect key="frame" x="73" y="10" width="69" height="45.5"/>
+                                                    <fontDescription key="fontDescription" name="BBTreeGR" family="BBTreeG_R" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17.08.18. 07:45" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vxP-vn-R5x">
+                                                    <rect key="frame" x="241.5" y="23.5" width="118.5" height="20"/>
+                                                    <fontDescription key="fontDescription" name="BBTreeGL" family="BBTreeG_L" pointSize="17"/>
+                                                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="댓글이 존재하지 않습니다" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T1n-Ic-tmC">
+                                                    <rect key="frame" x="102" y="22.5" width="171.5" height="20"/>
+                                                    <fontDescription key="fontDescription" name="BBTreeGL" family="BBTreeG_L" pointSize="17"/>
+                                                    <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="vxP-vn-R5x" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="5kN-nb-o8g" secondAttribute="trailing" constant="10" id="0NC-je-lwo"/>
+                                                <constraint firstAttribute="trailing" secondItem="vxP-vn-R5x" secondAttribute="trailing" constant="15" id="5yT-We-9MV"/>
+                                                <constraint firstItem="XdG-FF-O4h" firstAttribute="centerY" secondItem="Jws-Hf-qX6" secondAttribute="centerY" id="Ah9-57-JUH"/>
+                                                <constraint firstItem="XdG-FF-O4h" firstAttribute="leading" secondItem="Jws-Hf-qX6" secondAttribute="leading" constant="15" id="HE1-UX-MAe"/>
+                                                <constraint firstItem="vxP-vn-R5x" firstAttribute="centerY" secondItem="5kN-nb-o8g" secondAttribute="centerY" id="RcP-bi-PTq"/>
+                                                <constraint firstItem="T1n-Ic-tmC" firstAttribute="centerY" secondItem="Jws-Hf-qX6" secondAttribute="centerY" id="d6x-zv-FbC"/>
+                                                <constraint firstItem="T1n-Ic-tmC" firstAttribute="centerX" secondItem="Jws-Hf-qX6" secondAttribute="centerX" id="gZT-DC-EeM"/>
+                                                <constraint firstAttribute="bottom" secondItem="5kN-nb-o8g" secondAttribute="bottom" constant="10" id="sIp-Ka-lSH"/>
+                                                <constraint firstItem="5kN-nb-o8g" firstAttribute="top" secondItem="Jws-Hf-qX6" secondAttribute="top" constant="10" id="tfd-A5-4KQ"/>
+                                                <constraint firstItem="5kN-nb-o8g" firstAttribute="leading" secondItem="XdG-FF-O4h" secondAttribute="trailing" constant="13" id="wyW-ix-VVp"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="content" destination="5kN-nb-o8g" id="hbE-Nt-gqy"/>
+                                            <outlet property="isComment" destination="T1n-Ic-tmC" id="e0S-Gk-Dhw"/>
+                                            <outlet property="time" destination="vxP-vn-R5x" id="xdq-zd-kLv"/>
+                                            <outlet property="writer" destination="XdG-FF-O4h" id="eYZ-2T-2Tp"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j3U-57-zzj">
+                                <rect key="frame" x="0.0" y="667" width="375" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3a7-eE-sFt">
+                                        <rect key="frame" x="318" y="5" width="57" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="57" id="0Q6-t2-7GU"/>
+                                        </constraints>
+                                        <state key="normal" image="send"/>
+                                    </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Fry-kD-R3b">
+                                        <rect key="frame" x="0.0" y="5" width="318" height="40"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Kge-dT-6Ol"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Fry-kD-R3b" firstAttribute="top" secondItem="j3U-57-zzj" secondAttribute="top" constant="5" id="55T-MV-wRk"/>
+                                    <constraint firstItem="3a7-eE-sFt" firstAttribute="bottom" secondItem="Fry-kD-R3b" secondAttribute="bottom" id="BcB-tH-XKb"/>
+                                    <constraint firstItem="3a7-eE-sFt" firstAttribute="leading" secondItem="Fry-kD-R3b" secondAttribute="trailing" id="GdC-ja-FWm"/>
+                                    <constraint firstItem="Fry-kD-R3b" firstAttribute="leading" secondItem="j3U-57-zzj" secondAttribute="leading" id="MaY-1v-NiD"/>
+                                    <constraint firstAttribute="bottom" secondItem="Fry-kD-R3b" secondAttribute="bottom" constant="5" id="T12-rj-OBz"/>
+                                    <constraint firstAttribute="trailing" secondItem="3a7-eE-sFt" secondAttribute="trailing" id="UDQ-IY-jpW"/>
+                                    <constraint firstItem="3a7-eE-sFt" firstAttribute="top" secondItem="Fry-kD-R3b" secondAttribute="top" id="mLN-KR-i9E"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="댓글 쓰기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Wf-AQ-9db">
+                                <rect key="frame" x="10" y="651.5" width="57" height="17.5"/>
+                                <fontDescription key="fontDescription" name="BBTreeGR" family="BBTreeG_R" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="j3U-57-zzj" firstAttribute="leading" secondItem="4JZ-Iw-nkx" secondAttribute="leading" id="0AV-eg-3hz"/>
+                            <constraint firstItem="2RI-LB-YxZ" firstAttribute="top" secondItem="4JZ-Iw-nkx" secondAttribute="top" id="6im-0e-0Fb"/>
+                            <constraint firstItem="2RI-LB-YxZ" firstAttribute="trailing" secondItem="4JZ-Iw-nkx" secondAttribute="trailing" id="Njq-ff-2lA"/>
+                            <constraint firstItem="X2s-iW-YRI" firstAttribute="top" secondItem="j3U-57-zzj" secondAttribute="bottom" id="RYw-UZ-PRX"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="5Wf-AQ-9db" secondAttribute="trailing" constant="15" id="RfK-uE-B6M"/>
+                            <constraint firstItem="5Wf-AQ-9db" firstAttribute="top" secondItem="2RI-LB-YxZ" secondAttribute="bottom" constant="5" id="XP3-p6-D3S"/>
+                            <constraint firstItem="Fry-kD-R3b" firstAttribute="top" secondItem="5Wf-AQ-9db" secondAttribute="bottom" constant="3" id="aQY-5O-3Cv"/>
+                            <constraint firstItem="j3U-57-zzj" firstAttribute="trailing" secondItem="4JZ-Iw-nkx" secondAttribute="trailing" id="c3O-gK-RiB"/>
+                            <constraint firstItem="5Wf-AQ-9db" firstAttribute="leading" secondItem="4JZ-Iw-nkx" secondAttribute="leading" constant="10" id="kGX-eC-6dB"/>
+                            <constraint firstItem="2RI-LB-YxZ" firstAttribute="leading" secondItem="4JZ-Iw-nkx" secondAttribute="leading" id="wDl-Ve-WAO"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="375" height="717"/>
+                    <connections>
+                        <outlet property="commentTxt" destination="Fry-kD-R3b" id="dU5-JT-xF7"/>
+                        <outlet property="commentTxt_height" destination="Kge-dT-6Ol" id="0ta-lv-z2N"/>
+                        <outlet property="commentView_bottom" destination="RYw-UZ-PRX" id="ZZA-2d-dTn"/>
+                        <outlet property="commentWrite" destination="3a7-eE-sFt" id="iHq-nZ-632"/>
+                        <outlet property="detailTable" destination="2RI-LB-YxZ" id="ZML-OU-ic8"/>
+                        <outlet property="textViewHeight" destination="Kge-dT-6Ol" id="Fc0-b4-3KQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6U9-fp-8m6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2152.8000000000002" y="91.304347826086968"/>
+        </scene>
+        <!--Community CommentVC-->
+        <scene sceneID="hEd-o6-zv6">
+            <objects>
+                <viewController storyboardIdentifier="CommunityCommentVC" id="Dah-0A-k0H" customClass="CommunityCommentVC" customModule="Seouri" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Nan-RT-cGh"/>
+                        <viewControllerLayoutGuide type="bottom" id="snq-ae-inM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8Pn-Mw-F0k">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9yS-Ak-UDo">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="478.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommentHeaderCell" rowHeight="90" id="0fN-Ke-4fD" customClass="CommentHeaderCell" customModule="Seouri" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="90"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0fN-Ke-4fD" id="SUt-KS-kOh">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="89.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="L57-dK-hfK">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="3"/>
+                                                    <color key="backgroundColor" red="0.81568627449999997" green="0.92941176469999998" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="3" id="Oyz-Bz-KMw"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="T7X-sO-H9S">
+                                                    <rect key="frame" x="14" y="24" width="40" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="40" id="HcP-fp-7wo"/>
+                                                        <constraint firstAttribute="height" constant="40" id="Zzb-b6-GOn"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="희망마을 운영자" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yV5-z3-raL">
+                                                    <rect key="frame" x="70" y="34.5" width="108" height="20"/>
+                                                    <fontDescription key="fontDescription" name="BBTreeGR" family="BBTreeG_R" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HNR-4c-9sE">
+                                                    <rect key="frame" x="0.0" y="86.5" width="320" height="3"/>
+                                                    <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="3" id="UXl-xh-J66"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="T7X-sO-H9S" firstAttribute="top" secondItem="SUt-KS-kOh" secondAttribute="top" constant="24" id="8vp-fA-dv9"/>
+                                                <constraint firstItem="L57-dK-hfK" firstAttribute="top" secondItem="SUt-KS-kOh" secondAttribute="top" id="Dg0-Ak-zcK"/>
+                                                <constraint firstItem="HNR-4c-9sE" firstAttribute="leading" secondItem="SUt-KS-kOh" secondAttribute="leading" id="Iag-do-hEe"/>
+                                                <constraint firstItem="T7X-sO-H9S" firstAttribute="leading" secondItem="SUt-KS-kOh" secondAttribute="leading" constant="14" id="OVk-F7-opW"/>
+                                                <constraint firstAttribute="trailing" secondItem="HNR-4c-9sE" secondAttribute="trailing" id="Teg-b8-Rbo"/>
+                                                <constraint firstAttribute="trailing" secondItem="L57-dK-hfK" secondAttribute="trailing" id="WOk-Yv-oof"/>
+                                                <constraint firstItem="yV5-z3-raL" firstAttribute="leading" secondItem="T7X-sO-H9S" secondAttribute="trailing" constant="16" id="chR-tb-Xnq"/>
+                                                <constraint firstAttribute="bottom" secondItem="HNR-4c-9sE" secondAttribute="bottom" id="g1p-7e-kAY"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="yV5-z3-raL" secondAttribute="trailing" constant="15" id="p7t-5t-bDN"/>
+                                                <constraint firstItem="yV5-z3-raL" firstAttribute="centerY" secondItem="T7X-sO-H9S" secondAttribute="centerY" id="s5Q-Xr-376"/>
+                                                <constraint firstItem="L57-dK-hfK" firstAttribute="leading" secondItem="SUt-KS-kOh" secondAttribute="leading" id="vzg-Vt-pRp"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="writer" destination="yV5-z3-raL" id="LRI-gk-Isf"/>
+                                            <outlet property="writer_img" destination="T7X-sO-H9S" id="6AS-AQ-xG1"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCommentCell" rowHeight="66" id="Rj3-Sh-k7n" customClass="PostCommentCell" customModule="Seouri" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="118" width="320" height="66"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Rj3-Sh-k7n" id="Dhv-lA-pTw">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="65.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="옹송우" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fof-kk-kVS">
+                                                    <rect key="frame" x="15" y="22.5" width="45" height="20"/>
+                                                    <fontDescription key="fontDescription" name="BBTreeGB" family="BBTreeG_B" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="맛잇겠네요!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="whz-7H-B2q">
+                                                    <rect key="frame" x="73" y="10" width="69" height="45.5"/>
+                                                    <fontDescription key="fontDescription" name="BBTreeGL" family="BBTreeG_L" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17.08.18. 07:45" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fb5-10-qpf">
+                                                    <rect key="frame" x="221.5" y="26.5" width="83.5" height="14"/>
+                                                    <fontDescription key="fontDescription" name="BBTreeGL" family="BBTreeG_L" pointSize="12"/>
+                                                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Fb5-10-qpf" firstAttribute="centerY" secondItem="whz-7H-B2q" secondAttribute="centerY" id="0KM-y8-0vQ"/>
+                                                <constraint firstItem="whz-7H-B2q" firstAttribute="leading" secondItem="fof-kk-kVS" secondAttribute="trailing" constant="13" id="1QC-Da-fsK"/>
+                                                <constraint firstItem="whz-7H-B2q" firstAttribute="top" secondItem="Dhv-lA-pTw" secondAttribute="top" constant="10" id="Euk-2W-iqB"/>
+                                                <constraint firstItem="fof-kk-kVS" firstAttribute="centerY" secondItem="Dhv-lA-pTw" secondAttribute="centerY" id="OD4-W6-aui"/>
+                                                <constraint firstAttribute="bottom" secondItem="whz-7H-B2q" secondAttribute="bottom" constant="10" id="S9y-ak-Ryk"/>
+                                                <constraint firstItem="fof-kk-kVS" firstAttribute="leading" secondItem="Dhv-lA-pTw" secondAttribute="leading" constant="15" id="dCv-3L-Py8"/>
+                                                <constraint firstAttribute="trailing" secondItem="Fb5-10-qpf" secondAttribute="trailing" constant="15" id="k1w-AC-ymx"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="whz-7H-B2q" secondAttribute="trailing" constant="15" id="m2F-CD-Rfo"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="content" destination="whz-7H-B2q" id="Vvm-UG-rAC"/>
+                                            <outlet property="time" destination="Fb5-10-qpf" id="GyQ-P3-W35"/>
+                                            <outlet property="writer" destination="fof-kk-kVS" id="aFg-vx-8tb"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="댓글 쓰기" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qdN-Ny-36E">
+                                <rect key="frame" x="15" y="486.5" width="57" height="17.5"/>
+                                <fontDescription key="fontDescription" name="BBTreeGR" family="BBTreeG_R" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="22s-Sf-LR3">
+                                <rect key="frame" x="0.0" y="516" width="320" height="2"/>
+                                <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="peL-FI-XZu"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cqX-ze-OO9">
+                                <rect key="frame" x="263" y="518" width="57" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="57" id="PGa-4M-noC"/>
+                                </constraints>
+                                <state key="normal" image="send"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="adp-p2-GrI">
+                                <rect key="frame" x="0.0" y="518" width="263" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="52l-sx-9Sj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cqX-ze-OO9" firstAttribute="top" secondItem="adp-p2-GrI" secondAttribute="top" id="13f-Rm-LaC"/>
+                            <constraint firstItem="adp-p2-GrI" firstAttribute="top" secondItem="22s-Sf-LR3" secondAttribute="bottom" id="8L7-Qo-9zQ"/>
+                            <constraint firstItem="adp-p2-GrI" firstAttribute="leading" secondItem="8Pn-Mw-F0k" secondAttribute="leading" id="Cgw-4k-Ooh"/>
+                            <constraint firstItem="22s-Sf-LR3" firstAttribute="leading" secondItem="8Pn-Mw-F0k" secondAttribute="leading" id="FRY-bR-SUR"/>
+                            <constraint firstItem="qdN-Ny-36E" firstAttribute="leading" secondItem="8Pn-Mw-F0k" secondAttribute="leading" constant="15" id="FRd-EY-OPb"/>
+                            <constraint firstAttribute="trailing" secondItem="22s-Sf-LR3" secondAttribute="trailing" id="QZT-b4-5Ox"/>
+                            <constraint firstItem="22s-Sf-LR3" firstAttribute="top" secondItem="qdN-Ny-36E" secondAttribute="bottom" constant="12" id="T2a-wd-Rvm"/>
+                            <constraint firstItem="Nan-RT-cGh" firstAttribute="bottom" secondItem="9yS-Ak-UDo" secondAttribute="top" constant="20" id="ViU-Q2-ZhB"/>
+                            <constraint firstAttribute="bottom" secondItem="adp-p2-GrI" secondAttribute="bottom" id="XqD-Ky-6oR"/>
+                            <constraint firstItem="cqX-ze-OO9" firstAttribute="trailing" secondItem="8Pn-Mw-F0k" secondAttribute="trailing" id="d1D-6c-ZYb"/>
+                            <constraint firstItem="cqX-ze-OO9" firstAttribute="bottom" secondItem="adp-p2-GrI" secondAttribute="bottom" id="hVX-jb-ejU"/>
+                            <constraint firstItem="cqX-ze-OO9" firstAttribute="leading" secondItem="adp-p2-GrI" secondAttribute="trailing" id="omw-Gx-iHr"/>
+                            <constraint firstItem="qdN-Ny-36E" firstAttribute="top" secondItem="9yS-Ak-UDo" secondAttribute="bottom" constant="8" id="qDr-mC-mIk"/>
+                            <constraint firstItem="9yS-Ak-UDo" firstAttribute="trailing" secondItem="8Pn-Mw-F0k" secondAttribute="trailing" id="qrv-mW-gLD"/>
+                            <constraint firstItem="cqX-ze-OO9" firstAttribute="height" secondItem="adp-p2-GrI" secondAttribute="height" id="r8W-ES-kr3"/>
+                            <constraint firstItem="9yS-Ak-UDo" firstAttribute="leading" secondItem="8Pn-Mw-F0k" secondAttribute="leading" id="sOI-UT-L0j"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="commentTable" destination="9yS-Ak-UDo" id="Cow-El-qjc"/>
+                        <outlet property="comment_text" destination="adp-p2-GrI" id="c3h-uT-klx"/>
+                        <outlet property="send_comment" destination="cqX-ze-OO9" id="wEr-KO-orz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fQn-9E-xoU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2838" y="91"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="clip" width="32" height="32"/>
+        <image name="imgMore" width="12" height="12"/>
+        <image name="minus_btn" width="27" height="27"/>
+        <image name="noImage" width="130" height="130"/>
+        <image name="okay" width="109" height="53"/>
+        <image name="pen-1" width="31" height="32"/>
+        <image name="search" width="27" height="27"/>
+        <image name="search-1" width="37" height="29"/>
+        <image name="send" width="33" height="31"/>
+        <image name="verybigsearch" width="123" height="151"/>
+        <image name="yellowszquare" width="234" height="29"/>
+    </resources>
+</document>
